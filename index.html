@@ -3,13 +3,45 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script src="main.js"></script>
   </head>
   <body>
     <h1>Hello World!</h1>
     <hr/>
     <div id="display-element"></div>
     <button onclick="displayDate()">Click Me</button>
+    <!-- ///////////////////////////////////////////////// -->
+    <input type="number" name="number" id="number" placeholder="use mouse">
+    <button onclick="displayStr()" id="display-str">Get String</button>
+    <!-- ///////////////////////////////////////////////// -->
+    <input type="text" name="text" id="text" placeholder="use keypad">
+    <button onclick="displayNum()" id="display-num">Get Number</button>
+    <!-- ////////////////////////////////////////////////////// -->
+    <p>Sum of X & Y > 20, OR Input X = 10 for Return: </p>
+    <label for="num1">Input X</label>
+    <input type="number" name="num1" id="num1" onclick="inputNumOne(this.value)">
+    <label for="num2">Input Y</label>
+    <input type="number" name="num2" id="num2" onclick="inputNumTwo(this.value)">
+    <button onclick="displayOneTrue()">One is True</button>
+    <button type="text" name="text2" id="text2" onclick="addThese()">Add</button>
+    <p></p> A > B & C > B for Return:
+    <label for="a">Input A</label>
+    <input type="number" name="a" id="a" onclick="inputA(this.value)">
+    <label for="b">Input B</label>
+    <input type="number" name="b" id="b" onclick="inputB(this.value)">
+    <label for="c">Input C</label>
+    <input type="number" name="c" id="c" onclick="inputC(this.value)">
+    <button type="text" name="text3" id="text3" onclick="bothAreTrue()">Both are True</button>
+    <p> Par1 != Par2 && Par1 != 10 for Return: </p>
+    <label for="par1">Parameter 1</label>
+    <input type="number" name="par1" id="par1">
+    <label for="par2">Parameter 2</label>
+    <input type="number" name="par2" id="par2">
+    <button type="text" name="text4" id="text4"> Both Not True</button>
+    <!-- <label for="type">Data Type</label> -->
+    <!-- <input onkeyup="displayTypeOf()" type="text" name="type" id="type"> -->
+    <h3 id="display"></h3>
+    <h3 id="type-of"></h3>
     <hr/>
+    <script src="main.js"></script>
   </body>
 </html>
